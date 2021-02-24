@@ -48,8 +48,8 @@
     
    <div class="container-fluid mt-5 pt-5">
       <div class="row ">
-         <div class="col-sm-5 my-1">
-            <div class="col rounded shadow pb-1">
+         <div class="col-lg-6 my-1">
+            <div class="col rounded shadow pb-1" style="height: 400px;">
                <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Verifica stocul:</h2>
                <div class="input-group pb-3" style>
                   <input type="text" class="form-control" placeholder="Cauta dupa codul produsului...">
@@ -58,62 +58,394 @@
                   </div>
                </div>
                <p class="text-secondary font-weight-bold">Rezultate:</p>
-               <table class="table table-striped text-center">
-                  <thead>
-                    <tr>
-                        <th class="align-middle" style="width: 40px;">#</th>
-                        <th class="align-middle">Cod</th>
-                        <th class="align-middle" style="width: 40px;">Stoc Cluj</th>
-                        <th style="width: 80px;" >Comandate restoc</th>
-                        <th style="width: 50px;">Cere oferta</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                        <td>23213</td>
-                        <td>6ES7215-1AG40-0XB0</td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td><i class="fas fa-cart-plus text-info"></i></td>
-                    </tr>
-                    <tr>
-                        <td>13231</td>
-                        <td>6ES7215-1AG40-0XB0</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td><i class="fas fa-cart-plus text-info"></i></td>
-                     </tr>
-                     <tr>
-                        <td>32121</td>
-                        <td>6ES7215-1AG40-0XB0</td>
-                        <td>5</td>
-                        <td>4</td>
-                        <td><i class="fas fa-cart-plus text-info"></i></td>
-                     </tr>
-                  </tbody>
-                </table>
-            </div>
-         </div>
-
-         <div class="col-sm-3 my-1">
-            <div class="col rounded shadow pb-1">
-               <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Status comenzi:</h2>
-               <p class="text-secondary font-weight-bold">Comenzi active: <span class="bg-warning px-1 text-light rounded-lg">5</span></p>
-               <p class="text-secondary font-weight-bold">Comenzi finalizate: <span class="bg-info px-1 text-light rounded-lg">37</span></p>
-            </div>
-            <div class="col rounded shadow pb-1 mt-4">
-               <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Ultimele comenzi:</h2>
-               fid
+               <div class="container-fluid visible" style="height: 240px; overflow: scroll;">
+                  <table class="table table-striped text-center">
+                     <thead class="sticky-top bg-info" style="color: rgba(0, 0, 0, .7);">
+                       <tr>
+                           <th class="align-middle" style="width: 40px;">#</th>
+                           <th class="align-middle">Cod</th>
+                           <th class="align-middle" style="width: 40px;">Stoc Cluj</th>
+                           <th style="width: 80px;" >Comandate restoc</th>
+                           <th style="width: 50px;">Cere oferta</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>23213</td>
+                           <td>6ES7215-1AG40-0XB0</td>
+                           <td>3</td>
+                           <td>0</td>
+                           <td><i class="fas fa-cart-plus text-info"></i></td>
+                        </tr>
+                        <tr>
+                           <td>23213</td>
+                           <td>6ES7215-1AG40-0XB0</td>
+                           <td>3</td>
+                           <td>0</td>
+                           <td><i class="fas fa-cart-plus text-info"></i></td>
+                        </tr>
+                        <tr>
+                           <td>13231</td>
+                           <td>6ES7215-1AG40-0XB0</td>
+                           <td>0</td>
+                           <td>0</td>
+                           <td><i class="fas fa-cart-plus text-info"></i></td>
+                        </tr>
+                        <tr>
+                           <td>32121</td>
+                           <td>6ES7215-1AG40-0XB0</td>
+                           <td>0</td>
+                           <td>4</td>
+                           <td><i class="fas fa-cart-plus text-info"></i></td>
+                        </tr>
+                        <tr>
+                           <td>32121</td>
+                           <td>6ES7215-1AG40-0XB0</td>
+                           <td>0</td>
+                           <td>3</td>
+                           <td><i class="fas fa-cart-plus text-info"></i></td>
+                        </tr>
+                        <tr>
+                           <td>32121</td>
+                           <td>6ES7215-1AG40-0XB0</td>
+                           <td>5</td>
+                           <td>2</td>
+                           <td><i class="fas fa-cart-plus text-info"></i></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </div>
          </div>
          
-         <div class="col-sm-3 my-1">
-            <div class="col border border-sm rounded">
-               t
+         <div class="col-lg-6 my-1">
+            <div class="row">
+               <div class="col-sm-5 my-1">
+                  <div class="col rounded shadow pb-1" style="height: 130px;">
+                     <h2 class="text-info text-uppercase font-weight-bolder pt-3 status-comenzi-h2 h6" style="letter-spacing: 1px;">Status comenzi:</h2>
+                     <p class="text-secondary font-weight-bold">Active: <span class="bg-warning px-1 text-light rounded-lg">5</span></p>
+                     <p class="text-secondary font-weight-bold">Finalizate: <span class="bg-info px-1 text-light rounded-lg">37</span></p>
+                  </div>
+               </div>
+               
+               <div class="col-sm-7 my-1">
+                  <div class="col rounded shadow pb-1" style="height: 130px;">
+                     <h2 class="text-info text-uppercase font-weight-bolder pt-3 status-comenzi-h2 h6" style="letter-spacing: 1px;">ELCONET SRL</h2>
+                     <p class="text-secondary font-weight-normal">cosmin.ghirisan@elconet.ro</p>
+                     <a href="#" class="btn btn-sm btn-outline-info" >Schimba parola</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row mt-4">
+               <div class="col-sm-12 my-1">
+                  <div class="col rounded shadow pb-1" style="height: 235px;">
+                     <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Informatii importante:</h2>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos eum porro esse cumque totam assumenda tenetur reprehenderit explicabo expedita modi.</p>
+                  </div>  
+               </div>
+            </div>
+            
+            
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-lg-6 my-4">
+            <div class="col rounded shadow pb-1" style="max-height: 350px;">
+               
+               <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Comenzi active:</h2>
+               <div class="input-group pb-3" style>
+                  <input type="text" class="form-control" placeholder="Cauta dupa numarul comenzii...">
+                  <div class="input-group-append">
+                     <button class="btn btn-info" type="submit">Cauta</button> 
+                  </div>
+               </div>
+               
+               <div class="container-fluid visible" style="height: 240px; overflow: scroll;">
+                  <table class="table table-striped text-center">
+                     <thead class="sticky-top bg-info" style="color: rgba(0, 0, 0, .7);">
+                        <tr class="">
+                           <th class="align-middle" style="width:40%;">Numarul comenzii</th>
+                           <th class="align-middle" style="width: 10%;">Data</th>
+                           <th class="align-middle" style="width: 20%;">Pozitii livrate</th>
+                           <th style="width: 30%" >Status</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <a class="text-secondary" data-toggle="modal" data-target="#myModal" style="cursor: pointer;">PO0002032</a>
+                           </td>
+                           <td>23.03.2021</td>
+                           <td>10 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:70%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><a href="X">PO0002032</a></td>
+                           <td>23.03.2021</td>
+                           <td>10 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:70%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><a href="X">PO0002032</a></td>
+                           <td>23.03.2021</td>
+                           <td>3 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:40%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><a href="X">PO0002032</a></td>
+                           <td>23.03.2021</td>
+                           <td>10 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:70%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><a href="X">PO0002032</a></td>
+                           <td>23.03.2021</td>
+                           <td>3 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:40%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                     </table>
+               </div>
+               
             </div>
          </div>
       </div>
    </div>
-   
+
+
 </body>
 </html>
+
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+   <div class="modal-dialog modal-xl modal-dialog-scrollable">
+     <div class="modal-content">
+     
+       <!-- Modal Header -->
+       <div class="modal-header">
+         <h4 class="modal-title text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Comanda: <span>PO0002032</span></h4>
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+       </div>
+       
+       <!-- Modal body -->
+       <div class="modal-body">
+         <div class="row">
+            <div class="col">
+               <div class="container mb-3 visible border border-top-0 border-info rounded" style="height: 240px; overflow: scroll;">
+                  <table class="table table-striped text-center">
+                     <thead class="sticky-top bg-info" style="color: rgba(0, 0, 0, .7);">
+                        <tr class="">
+                           <th class="align-middle" style="width: 5%;">Nr.</th>
+                           <th class="align-middle" style="width: 50%;">Cod produs</th>
+                           <th class="align-middle" style="width: 5%;">Cantitate</th>
+                           <th class="align-middle" style="width: 5%;">Pret / buc</th>
+                           <th class="align-middle" style="width: 5%;">Depozit Cluj</th>
+                           <th class="align-middle" style="width: 5%;">Livrat</th>
+                           <th class="align-middle" style="width: 10%;">Data aproximativa</th>
+                           <th class="align-middle" style="width: 20%;">Progres</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>1</td>
+                           <td>
+                              6ES7214-1AG40-0XB0
+                           </td>
+                           <td>4</td>
+                           <td>31245.54</td>
+                           <td>0</td>
+                           <td>4</td>
+                           <td>23.03.2021</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:100%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>2</td>
+                           <td>
+                              6ES7214-1AG40-0XB0
+                           </td>
+                           <td>3</td>
+                           <td>245.54</td>
+                           <td>1</td>
+                           <td>2</td>
+                           <td>23.03.2021</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:33%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>3</td>
+                           <td>
+                              6ES7214-1AG40-0XB0
+                           </td>
+                           <td>4</td>
+                           <td>45.54</td>
+                           <td>0</td>
+                           <td>4</td>
+                           <td></td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:100%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>4</td>
+                           <td>
+                              6ES7214-1AG40-0XB0
+                           </td>
+                           <td>4</td>
+                           <td>35.4</td>
+                           <td>0</td>
+                           <td>4</td>
+                           <td>23.03.2021</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:100%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>5</td>
+                           <td>
+                              6ES7214-1AG40-0XB0
+                           </td>
+                           <td>8</td>
+                           <td>324</td>
+                           <td>4</td>
+                           <td>4</td>
+                           <td></td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:50%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                     </table>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="container-fluid mb-3 border border-right-0 border-info rounded bg-light">
+                        <h4 class="h6 text-secondary mt-2">Observatii:</h4>
+                        <div class="" style="height: 180px;"></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="container-fluid mb-3 border border-left-0 border-info rounded bg-light" style="overflow: scroll; height: 215px;">
+                        <h4 class="h6 text-secondary my-2">Expedieri partiale:</h4>
+                        <div class="" >
+                           <p class="text-info mb-n1 mt-2">Data: <span>23.03.2021</span></p>
+                           <table class="table table-striped text-center">
+                              <thead class="" style="color: rgba(0, 0, 0, .7);">
+                                <tr>
+                                    <th class="align-middle" style="width: 10%;">Nr.</th>
+                                    <th class="align-middle" style="width: 70%;">Cod</th>
+                                    <th class="align-middle" style="width: 20%;">Cantitate</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>1</td>
+                                    <td>6ES7215-1AG40-0XB0</td>
+                                    <td>3</td>
+                                 </tr>
+                                 <tr>
+                                    <td>2</td>
+                                    <td>6ES7215-1AG40-0XB0</td>
+                                    <td>3</td>
+                                 </tr>
+                                 <tr>
+                                    <td>3</td>
+                                    <td>6ES7215-1AG40-0XB0</td>
+                                    <td>3</td>
+                                 </tr>
+                                 <tr>
+                                    <td>4</td>
+                                    <td>6ES7215-1AG40-0XB0</td>
+                                    <td>3</td>
+                                 </tr>
+                                 <tr>
+                                    <td>5</td>
+                                    <td>6ES7215-1AG40-0XB0</td>
+                                    <td>3</td>
+                                 </tr>
+                                 
+                              </tbody>
+                           </table>
+                        </div>
+                        <div class="" >
+                           <p class="text-info mb-n1 mt-2">Data: <span>23.03.2021</span></p>
+                           <table class="table table-striped text-center">
+                              <thead class="" style="color: rgba(0, 0, 0, .7);">
+                                <tr>
+                                    <th class="align-middle" style="width: 10%;">Nr.</th>
+                                    <th class="align-middle" style="width: 70%;">Cod</th>
+                                    <th class="align-middle" style="width: 20%;">Cantitate</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td>1</td>
+                                    <td>6ES7215-1AG40-0XB0</td>
+                                    <td>3</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               
+               
+               
+            </div>
+         </div>
+       </div>
+       
+       <!-- Modal footer -->
+       <div class="modal-footer">
+         <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse officia perspiciatis sit iusto soluta ullam neque. Beatae quo architecto nisi!</p>
+       </div>
+       
+     </div>
+   </div>
+ </div>
+
+
+
+
+
+<!--
+
+-->
