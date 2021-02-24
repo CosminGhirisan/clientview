@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ro">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>clientView</title>
+      
+      <link rel="preconnect" href="https://fonts.gstatic.com"> 
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+      <link rel="icon" href="img/favicon.png" type="image/text">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <script src="https://kit.fontawesome.com/4b2f15bc3a.js" crossorigin="anonymous"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </head>
+<body>
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="index.html">
+         <img src="img/logoElconet.png" alt="Logo" width="150px">
+      </a>
+      
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse d-flex-sm" id="collapsibleNavbar">
+         <ul class="navbar-nav mx-3 ml-auto">
+            <li class="nav-item mx-5">
+               <a class="nav-link" href="#">Link1</a>
+            </li>
+            <li class="nav-item mx-5">
+               <a class="nav-link" href="#">Link2</a>
+            </li>
+            <li class="nav-item mx-5">
+               <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+            </li> 
+         </ul>
+      </div> 
+   </nav>
+    
+   <div class="container-fluid mt-5 pt-5">
+      <div class="row ">
+         <div class="col-sm-5 my-1">
+            <div class="col rounded shadow pb-1">
+               <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Verifica stocul:</h2>
+               <div class="input-group pb-3" style>
+                  <input type="text" class="form-control" placeholder="Cauta dupa codul produsului...">
+                  <div class="input-group-append">
+                     <button class="btn btn-info" type="submit">Cauta</button> 
+                  </div>
+               </div>
+               <p class="text-secondary font-weight-bold">Rezultate:</p>
+               <table class="table table-striped text-center">
+                  <thead>
+                    <tr>
+                        <th class="align-middle" style="width: 40px;">#</th>
+                        <th class="align-middle">Cod</th>
+                        <th class="align-middle" style="width: 40px;">Stoc Cluj</th>
+                        <th style="width: 80px;" >Comandate restoc</th>
+                        <th style="width: 50px;">Cere oferta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>23213</td>
+                        <td>6ES7215-1AG40-0XB0</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td><i class="fas fa-cart-plus text-info"></i></td>
+                    </tr>
+                    <tr>
+                        <td>13231</td>
+                        <td>6ES7215-1AG40-0XB0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td><i class="fas fa-cart-plus text-info"></i></td>
+                     </tr>
+                     <tr>
+                        <td>32121</td>
+                        <td>6ES7215-1AG40-0XB0</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td><i class="fas fa-cart-plus text-info"></i></td>
+                     </tr>
+                  </tbody>
+                </table>
+            </div>
+         </div>
+
+         <div class="col-sm-3 my-1">
+            <div class="col rounded shadow pb-1">
+               <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Status comenzi:</h2>
+               <p class="text-secondary font-weight-bold">Comenzi active: <span class="bg-warning px-1 text-light rounded-lg">5</span></p>
+               <p class="text-secondary font-weight-bold">Comenzi finalizate: <span class="bg-info px-1 text-light rounded-lg">37</span></p>
+            </div>
+            <div class="col rounded shadow pb-1 mt-4">
+               <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Ultimele comenzi:</h2>
+               fid
+            </div>
+         </div>
+         
+         <div class="col-sm-3 my-1">
+            <div class="col border border-sm rounded">
+               t
+            </div>
+         </div>
+      </div>
+   </div>
+   
+</body>
+</html>
