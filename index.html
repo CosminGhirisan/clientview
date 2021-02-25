@@ -4,12 +4,12 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>clientView</title>
+      <title>Test</title>
       
       <link rel="preconnect" href="https://fonts.gstatic.com"> 
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-      <link rel="icon" href="img/favicon.png" type="image/text">
+      <link rel="icon" type="image/png" href="img/favicon.png">
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -19,10 +19,11 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    </head>
 <body>
-   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top "> <!--NAVBAR-->
       <!-- Brand/logo -->
       <a class="navbar-brand" href="index.html">
-         <img src="img/logoElconet.png" alt="Logo" width="150px">
+         <!--<img src="img/logoElconet.png" alt="Logo" height="25px">-->
+         logo
       </a>
       
       <!-- Toggler/collapsibe Button -->
@@ -32,22 +33,25 @@
 
       <!-- Navbar links -->
       <div class="collapse navbar-collapse d-flex-sm" id="collapsibleNavbar">
-         <ul class="navbar-nav mx-3 ml-auto">
-            <li class="nav-item mx-5">
-               <a class="nav-link" href="#">Link1</a>
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-1 text-uppercase" style="font-size: 14px;">
+               <a class="nav-link" href="index.html">Acasa</a>
             </li>
-            <li class="nav-item mx-5">
-               <a class="nav-link" href="#">Link2</a>
+            <li class="nav-item mx-1 text-uppercase" style="font-size: 14px;">
+               <a class="nav-link" href="#">Deconectare</a>
             </li>
-            <li class="nav-item mx-5">
-               <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
-            </li> 
+            <li class="nav-item mx-4">
+               <a class="nav-link" href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  <small class="bg-danger px-1 text-light rounded-lg align-top" style="font-size: 8px;">5</small>
+               </a>
+            </li>
          </ul>
       </div> 
-   </nav>
+   </nav> <!--NAVBAR-->
     
-   <div class="container-fluid mt-5 pt-5">
-      <div class="row ">
+   <div class="container-fluid mt-5 pt-5"><!--CONTAINER-->
+      <div class="row"> <!--LINIA 1-->
          <div class="col-lg-6 my-1">
             <div class="col rounded shadow pb-1" style="height: 400px;">
                <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Verifica stocul:</h2>
@@ -130,8 +134,8 @@
                
                <div class="col-sm-7 my-1">
                   <div class="col rounded shadow pb-1" style="height: 130px;">
-                     <h2 class="text-info text-uppercase font-weight-bolder pt-3 status-comenzi-h2 h6" style="letter-spacing: 1px;">ELCONET SRL</h2>
-                     <p class="text-secondary font-weight-normal">cosmin.ghirisan@elconet.ro</p>
+                     <h2 class="text-info text-uppercase font-weight-bolder pt-3 status-comenzi-h2 h6" style="letter-spacing: 1px;">NUME FIRMA</h2>
+                     <p class="text-secondary font-weight-normal">name.company@test.ro</p>
                      <a href="#" class="btn btn-sm btn-outline-info" >Schimba parola</a>
                   </div>
                </div>
@@ -141,17 +145,17 @@
                <div class="col-sm-12 my-1">
                   <div class="col rounded shadow pb-1" style="height: 235px;">
                      <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Informatii importante:</h2>
-                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos eum porro esse cumque totam assumenda tenetur reprehenderit explicabo expedita modi.</p>
+                     
                   </div>  
                </div>
             </div>
             
             
          </div>
-      </div>
+      </div> <!--LINIA 1-->
 
-      <div class="row">
-         <div class="col-lg-6 my-4">
+      <div class="row"><!-- LINIA 2-->
+         <div class="col-lg-6 my-4"><!--COMENZI ACTIVE-->
             <div class="col rounded shadow pb-1" style="max-height: 350px;">
                
                <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Comenzi active:</h2>
@@ -188,17 +192,7 @@
                         <tr>
                            <td><a href="X">PO0002032</a></td>
                            <td>23.03.2021</td>
-                           <td>10 din 15</td>
-                           <td>
-                              <div class="progress">
-                                 <div class="progress-bar bg-info" style="width:70%"></div>
-                                 </div>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td><a href="X">PO0002032</a></td>
-                           <td>23.03.2021</td>
-                           <td>3 din 15</td>
+                           <td>7 din 15</td>
                            <td>
                               <div class="progress">
                                  <div class="progress-bar bg-info" style="width:40%"></div>
@@ -208,10 +202,20 @@
                         <tr>
                            <td><a href="X">PO0002032</a></td>
                            <td>23.03.2021</td>
-                           <td>10 din 15</td>
+                           <td>3 din 15</td>
                            <td>
                               <div class="progress">
-                                 <div class="progress-bar bg-info" style="width:70%"></div>
+                                 <div class="progress-bar bg-info" style="width:20%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><a href="X">PO0002032</a></td>
+                           <td>23.03.2021</td>
+                           <td>13 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:80%"></div>
                                  </div>
                            </td>
                         </tr>
@@ -230,9 +234,89 @@
                </div>
                
             </div>
-         </div>
-      </div>
-   </div>
+         </div><!--COMENZI ACTIVE-->
+         <div class="col-lg-6 my-4"><!--COMENZI FINALIZATE-->
+            <div class="col rounded shadow pb-1" style="max-height: 350px;">
+               
+               <h2 class="text-info h6 text-uppercase font-weight-bolder pt-3" style="letter-spacing: 1px;">Comenzi finalizate:</h2>
+               <div class="input-group pb-3" style>
+                  <input type="text" class="form-control" placeholder="Cauta dupa numarul comenzii...">
+                  <div class="input-group-append">
+                     <button class="btn btn-info" type="submit">Cauta</button> 
+                  </div>
+               </div>
+               
+               <div class="container-fluid visible" style="height: 240px; overflow: scroll;">
+                  <table class="table table-striped text-center">
+                     <thead class="sticky-top bg-info" style="color: rgba(0, 0, 0, .7);">
+                        <tr class="">
+                           <th class="align-middle" style="width:40%;">Numarul comenzii</th>
+                           <th class="align-middle" style="width: 10%;">Data</th>
+                           <th class="align-middle" style="width: 20%;">Pozitii livrate</th>
+                           <th style="width: 30%" >Status</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>
+                              <a class="text-secondary" data-toggle="modal" data-target="#myModal" style="cursor: pointer;">PO0002032</a>
+                           </td>
+                           <td>23.03.2021</td>
+                           <td>10 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:100%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><a href="X">PO0002032</a></td>
+                           <td>23.03.2021</td>
+                           <td>10 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:100%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><a href="X">PO0002032</a></td>
+                           <td>23.03.2021</td>
+                           <td>3 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:100%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><a href="X">PO0002032</a></td>
+                           <td>23.03.2021</td>
+                           <td>10 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:100%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td><a href="X">PO0002032</a></td>
+                           <td>23.03.2021</td>
+                           <td>3 din 15</td>
+                           <td>
+                              <div class="progress">
+                                 <div class="progress-bar bg-info" style="width:100%"></div>
+                                 </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                     </table>
+               </div>
+               
+            </div>
+         </div><!--COMENZI FINALIZATE-->
+      </div><!-- LINIA 2-->
+   </div><!--CONTAINER-->
 
 
 </body>
@@ -298,7 +382,7 @@
                            <td>23.03.2021</td>
                            <td>
                               <div class="progress">
-                                 <div class="progress-bar bg-info" style="width:33%"></div>
+                                 <div class="progress-bar bg-info" style="width:66%"></div>
                                  </div>
                            </td>
                         </tr>
@@ -363,7 +447,7 @@
                   <div class="col-lg-6">
                      <div class="container-fluid mb-3 border border-left-0 border-info rounded bg-light" style="overflow: scroll; height: 215px;">
                         <h4 class="h6 text-secondary my-2">Expedieri partiale:</h4>
-                        <div class="" >
+                        <div class="mb-4" >
                            <p class="text-info mb-n1 mt-2">Data: <span>23.03.2021</span></p>
                            <table class="table table-striped text-center">
                               <thead class="" style="color: rgba(0, 0, 0, .7);">
@@ -402,6 +486,10 @@
                                  
                               </tbody>
                            </table>
+                           <p class="text-muted mt-n3 pt-n3" style="font-size: 14px;">
+                              Tracking Code: 000908898739 <br> 
+                              Link: <a href="https://gls-group.eu/RO/ro/urmarire-colet?match=000908898739" target="_blank"> Click aici!</a> 
+                           </p>
                         </div>
                         <div class="" >
                            <p class="text-info mb-n1 mt-2">Data: <span>23.03.2021</span></p>
@@ -421,21 +509,21 @@
                                  </tr>
                               </tbody>
                            </table>
+                           <p class="text-muted mt-n3 pt-n3" style="font-size: 14px;">
+                              Tracking Code: 000908898739 <br> 
+                              Link: <a href="https://gls-group.eu/RO/ro/urmarire-colet?match=000908898739" target="_blank"> Click aici!</a> 
+                           </p>
                         </div>
                      </div>
                   </div>
                </div>
-               
-               
-               
-               
             </div>
          </div>
        </div>
        
        <!-- Modal footer -->
        <div class="modal-footer">
-         <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse officia perspiciatis sit iusto soluta ullam neque. Beatae quo architecto nisi!</p>
+         
        </div>
        
      </div>
